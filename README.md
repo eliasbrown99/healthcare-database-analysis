@@ -1,5 +1,7 @@
 # Healthcare Database Audit and SQL Reporting
 
+[Read the browser report](https://eliasbrown99.github.io/healthcare-database-analysis/)
+
 **Elias Brown · Database design, SQL, Python, and SQLite · Fictional records**
 
 This project follows a patient's care across hospital stays, outpatient visits, treatments, and medication orders. It began with a healthcare database I designed in Microsoft Access. The current Python/SQLite edition adds an audit, a revised schema, ten SQL reports, and worked examples that make the reporting rules inspectable.
@@ -44,3 +46,7 @@ The current scenario database has **502 patients (500 original plus 2 supplement
 <!-- END GENERATED COUNTS -->
 
 </details>
+
+## Related projects
+
+[Knoxville General Fund](https://eliasbrown99.github.io/knoxville-budget-analysis/) · [Applied Statistics in R](https://eliasbrown99.github.io/applied-statistics-in-r/)
