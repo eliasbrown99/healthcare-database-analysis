@@ -2,7 +2,7 @@
   "title": "Healthcare Database",
   "category": "Data design & reporting",
   "description": "Patient-centered relational design, SQL reporting, and validation on fictional healthcare records.",
-  "repository_url": null,
+  "repository_url": "https://github.com/eliasbrown99/healthcare-database-analysis",
   "nav": [
     [
       "Overview",
