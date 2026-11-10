@@ -103,15 +103,18 @@ def main():
 <title>{escape(title)} · Elias Brown</title><meta name="description" content="{escape(config['description'], quote=True)}">
 <link rel="stylesheet" href="{href(out / 'report.css', current)}"></head>
 <body><a class="skip" href="#main">Skip to content</a>
-<header class="masthead"><a class="identity" href="{href(out / 'index.html', current)}">ELIAS BROWN <span>Selected analytical work</span></a><span class="discipline">{escape(config['category'])}</span></header>
+<header class="masthead"><a class="identity" href="https://eliasbrown.io/">ELIAS BROWN <span>Selected analytical work</span></a><div class="masthead-links"><span class="discipline">{escape(config['category'])}</span><a class="home-link" href="https://eliasbrown.io/">← Back to eliasbrown.io</a></div></header>
 <div class="projectbar"><a class="projectname" href="{href(out / 'index.html', current)}">{escape(config['title'])}</a><nav class="site-nav" aria-label="Project">{''.join(nav)}{repo_link}</nav></div>
 <div class="layout"><aside class="contents"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="Sections">{section_links or '<a href="#main">Read the page</a>'}</nav></aside>
-<main id="main"><article>{body}</article><footer><strong>Elias Brown</strong><p>{footer}</p><a href="{href(out / 'index.html', current)}">Project overview</a> · <a href="#main">Back to top ↑</a></footer></main></div></body></html>'''
+<main id="main"><article>{body}</article><footer><strong>Elias Brown</strong><p>{footer}</p><a href="https://eliasbrown.io/">Personal website</a> · <a href="{href(out / 'index.html', current)}">Project overview</a> · <a href="#main">Back to top ↑</a></footer></main></div></body></html>'''
 
     for source, current in pages.items():
-        # GFM supports the source tables, raw figures, math, and GitHub callouts.
-        result = subprocess.run(command + ['--from=gfm+tex_math_dollars', '--to=html5', '--mathml', str(source)], text=True, capture_output=True, check=True)
+        # Currency-heavy reports disable dollar-delimited math; statistics keeps equations.
+        markdown_format = config.get('markdown_format', 'gfm+tex_math_dollars')
+        result = subprocess.run(command + [f'--from={markdown_format}', '--to=html5', '--mathml', str(source)], text=True, capture_output=True, check=True)
         body = result.stdout
+        # Repository READMEs link to this same browser edition; omit the circular link here.
+        body = re.sub(r'<p><a href="https://eliasbrown99\.github\.io/[^\"]+">Read the browser report</a></p>\s*', "", body)
         body = re.sub(r'\b(href|src)="([^"]*)"', lambda m: f'{m[1]}="{resolve_link(m[2], source, current)}"', body)
         body = re.sub(r'<table>', '<div class="table-wrap" role="region" aria-label="Data table" tabindex="0"><table>', body)
         body = body.replace('</table>', '</table></div>')
