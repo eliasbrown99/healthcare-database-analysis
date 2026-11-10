@@ -1,0 +1,21 @@
+PatientID,FirstName,LastName,IndexEncounter,DischargeDate,NextEncounterID,NextAdmitDate,DaysToNextAdmission,ReturnReason,ReturnAdmissionType
+2,Robert,Perez,1,2023-01-05,161,2023-01-25,20,Recurrent chest discomfort after recent PCI; medication access review,unplanned
+11,James,Wilson,7,2023-01-10,167,2023-01-20,10,Abdominal pain after appendectomy requiring reassessment,unplanned
+14,John,White,8,2023-01-11,168,2023-01-11,0,Postoperative pain and reduced mobility after hernia repair,unplanned
+16,John,Jackson,9,2023-01-13,169,2023-02-02,20,Planned staged coronary intervention for a second lesion,planned
+4,Elizabeth,Gonzalez,2,2023-01-15,162,2023-02-14,30,Incisional discomfort and drainage after coronary bypass surgery,unplanned
+26,Linda,Anderson,15,2023-01-18,175,2023-01-28,10,Abdominal pain after appendectomy requiring reassessment,unplanned
+29,Elizabeth,Smith,16,2023-01-19,176,2023-01-19,0,Postoperative pain and reduced mobility after hernia repair,unplanned
+32,Elizabeth,Sanchez,17,2023-01-21,177,2023-02-10,20,Planned staged coronary intervention for a second lesion,planned
+19,Thomas,Perez,10,2023-01-23,170,2023-02-22,30,Incisional discomfort and drainage after coronary bypass surgery,unplanned
+45,Susan,Wilson,23,2023-01-26,183,2023-02-05,10,Abdominal pain after appendectomy requiring reassessment,unplanned
+46,Paul,Davis,24,2023-01-27,184,2023-01-27,0,Postoperative pain and reduced mobility after hernia repair,unplanned
+48,Jennifer,Thompson,25,2023-01-29,185,2023-02-18,20,Planned staged coronary intervention for a second lesion,planned
+34,Linda,Smith,18,2023-01-31,178,2023-03-02,30,Incisional discomfort and drainage after coronary bypass surgery,unplanned
+63,David,Davis,31,2023-02-03,191,2023-02-13,10,Abdominal pain after appendectomy requiring reassessment,unplanned
+64,Christopher,Thompson,32,2023-02-04,192,2023-02-04,0,Postoperative pain and reduced mobility after hernia repair,unplanned
+66,Elizabeth,Anderson,33,2023-02-06,193,2023-02-26,20,Planned staged coronary intervention for a second lesion,planned
+52,Thomas,Anderson,26,2023-02-08,186,2023-03-10,30,Incisional discomfort and drainage after coronary bypass surgery,unplanned
+77,Joseph,Rodriguez,39,2023-02-11,199,2023-02-21,10,Abdominal pain after appendectomy requiring reassessment,unplanned
+79,Mary,Perez,40,2023-02-12,200,2023-02-12,0,Postoperative pain and reduced mobility after hernia repair,unplanned
+68,Lisa,Harris,34,2023-02-16,194,2023-03-18,30,Incisional discomfort and drainage after coronary bypass surgery,unplanned

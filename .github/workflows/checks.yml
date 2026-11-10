@@ -1,0 +1,28 @@
+name: Database checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Verify publication file list
+        run: python3 scripts/check_publication_files.py
+      - name: Validate the committed database
+        run: python scripts/validate_demo.py
+      - name: Test committed scenarios, constraints, and report boundaries
+        run: python -m unittest discover -s tests -v
+      - name: Compare published artifacts with an isolated clean rebuild
+        run: python scripts/check_artifacts.py
+      - name: Ensure checks did not alter the working tree
+        run: |
+          git diff --exit-code
+          test -z "$(git ls-files --others --exclude-standard)"

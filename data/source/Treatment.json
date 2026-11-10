@@ -1,0 +1,188 @@
+[
+  {
+    "TreatmentID": 1,
+    "TreatmentName": "Angioplasty",
+    "Description": "Opens narrowed or blocked blood vessels",
+    "SideEffects": "Bleeding, infection, blood clots, artery damage, allergic reaction to contrast dye."
+  },
+  {
+    "TreatmentID": 2,
+    "TreatmentName": "Bypass Surgery",
+    "Description": "Redirects blood flow around blocked arteries",
+    "SideEffects": "Bleeding, infection, irregular heartbeat, memory loss, fatigue."
+  },
+  {
+    "TreatmentID": 3,
+    "TreatmentName": "Pacemaker Implantation",
+    "Description": "Regulates abnormal heart rhythms",
+    "SideEffects": "Pain, swelling, bruising, infection at the implantation site, device malfunction."
+  },
+  {
+    "TreatmentID": 4,
+    "TreatmentName": "Cardiac Rehabilitation",
+    "Description": "Exercise and therapy post-heart issues",
+    "SideEffects": "Fatigue, muscle soreness, lightheadedness, shortness of breath."
+  },
+  {
+    "TreatmentID": 5,
+    "TreatmentName": "Insulin Therapy",
+    "Description": "Regulates blood sugar for diabetics",
+    "SideEffects": "Hypoglycemia, weight gain, skin reactions at injection site."
+  },
+  {
+    "TreatmentID": 6,
+    "TreatmentName": "Thyroid Hormone Replacement",
+    "Description": "Treats underactive thyroid",
+    "SideEffects": "Hair loss, palpitations, heat intolerance, insomnia."
+  },
+  {
+    "TreatmentID": 7,
+    "TreatmentName": "Adrenal Gland Surgery",
+    "Description": "Removes diseased adrenal glands",
+    "SideEffects": "Bleeding, infection, hormone imbalances, blood pressure fluctuations."
+  },
+  {
+    "TreatmentID": 8,
+    "TreatmentName": "Appendectomy",
+    "Description": "Removes the appendix due to infection",
+    "SideEffects": "Infection, bowel obstruction, abdominal pain, hernia at incision site."
+  },
+  {
+    "TreatmentID": 9,
+    "TreatmentName": "Cholecystectomy",
+    "Description": "Removes the gallbladder",
+    "SideEffects": "Diarrhea, bloating, infection, injury to bile ducts."
+  },
+  {
+    "TreatmentID": 10,
+    "TreatmentName": "Hernia Repair",
+    "Description": "Fixes hernias in the abdominal wall",
+    "SideEffects": "Pain, infection, recurrence of hernia, nerve damage."
+  },
+  {
+    "TreatmentID": 11,
+    "TreatmentName": "General Anesthesia",
+    "Description": "Puts patient to sleep for surgery",
+    "SideEffects": "Nausea, vomiting, sore throat, confusion, allergic reaction."
+  },
+  {
+    "TreatmentID": 12,
+    "TreatmentName": "Regional Anesthesia",
+    "Description": "Numbs specific areas for surgery",
+    "SideEffects": "Nerve damage, infection, low blood pressure, prolonged numbness."
+  },
+  {
+    "TreatmentID": 13,
+    "TreatmentName": "Epidural Injection",
+    "Description": "Relieves pain in the spine",
+    "SideEffects": "Headache, infection, bleeding, nerve injury, backache."
+  },
+  {
+    "TreatmentID": 14,
+    "TreatmentName": "EEG Monitoring",
+    "Description": "Tracks brain activity with electrodes",
+    "SideEffects": "Skin irritation from electrode adhesives, minor discomfort."
+  },
+  {
+    "TreatmentID": 15,
+    "TreatmentName": "Lumbar Puncture",
+    "Description": "Tests spinal fluid via needle insertion",
+    "SideEffects": "Headache, back pain, infection, bleeding at the puncture site."
+  },
+  {
+    "TreatmentID": 16,
+    "TreatmentName": "Brain Surgery",
+    "Description": "Treats brain conditions or injuries",
+    "SideEffects": "Infection, swelling, seizures, memory or cognitive changes."
+  },
+  {
+    "TreatmentID": 17,
+    "TreatmentName": "Joint Replacement",
+    "Description": "Replaces damaged joints with prosthetics",
+    "SideEffects": "Infection, blood clots, prosthetic failure, stiffness."
+  },
+  {
+    "TreatmentID": 18,
+    "TreatmentName": "Arthroscopy",
+    "Description": "Minimally invasive joint surgery",
+    "SideEffects": "Swelling, stiffness, infection, bleeding."
+  },
+  {
+    "TreatmentID": 19,
+    "TreatmentName": "Fracture Repair",
+    "Description": "Fixes and stabilizes broken bones",
+    "SideEffects": "Infection, nerve or blood vessel damage, improper healing."
+  },
+  {
+    "TreatmentID": 20,
+    "TreatmentName": "Well-Child Visit",
+    "Description": "Routine checkup for children's health",
+    "SideEffects": "None (routine checkup)."
+  },
+  {
+    "TreatmentID": 21,
+    "TreatmentName": "Vaccinations",
+    "Description": "Prevents infectious diseases with vaccines",
+    "SideEffects": "Soreness at injection site, mild fever, fatigue, allergic reaction."
+  },
+  {
+    "TreatmentID": 22,
+    "TreatmentName": "Pediatric Surgery",
+    "Description": "Surgery specifically for children",
+    "SideEffects": "Bleeding, infection, delayed healing, anesthesia complications."
+  },
+  {
+    "TreatmentID": 23,
+    "TreatmentName": "Chemotherapy",
+    "Description": "Treats cancer with medication",
+    "SideEffects": "Nausea, fatigue, hair loss, infection risk, neuropathy."
+  },
+  {
+    "TreatmentID": 24,
+    "TreatmentName": "Radiation Therapy",
+    "Description": "Treats cancer with high-energy radiation",
+    "SideEffects": "Skin irritation, fatigue, nausea, local hair loss."
+  },
+  {
+    "TreatmentID": 25,
+    "TreatmentName": "Immunotherapy",
+    "Description": "Boosts immune system to fight disease",
+    "SideEffects": "Flu-like symptoms, rash, low blood pressure, diarrhea."
+  },
+  {
+    "TreatmentID": 26,
+    "TreatmentName": "Skin Biopsy",
+    "Description": "Removes skin tissue for testing",
+    "SideEffects": "Infection, bleeding, scarring, allergic reaction to anesthetics."
+  },
+  {
+    "TreatmentID": 27,
+    "TreatmentName": "Laser Treatment",
+    "Description": "reats skin issues with focused light",
+    "SideEffects": "Redness, swelling, scarring, pigmentation changes."
+  },
+  {
+    "TreatmentID": 28,
+    "TreatmentName": "Acne Treatment",
+    "Description": "mproves skin by reducing acne",
+    "SideEffects": "Dryness, irritation, sensitivity to sunlight."
+  },
+  {
+    "TreatmentID": 29,
+    "TreatmentName": "Psychotherapy",
+    "Description": "Mental health therapy with a professional",
+    "SideEffects": "Emotional distress during therapy, fatigue, discomfort addressing issues."
+  },
+  {
+    "TreatmentID": 30,
+    "TreatmentName": "Medication Management",
+    "Description": "Adjusts and monitors medications",
+    "SideEffects": "Side effects vary depending on the medication being managed."
+  },
+  {
+    "TreatmentID": 31,
+    "TreatmentName": "Electroconvulsive Therapy",
+    "Description": "Treats severe mental health issues",
+    "SideEffects": "Confusion, memory loss, muscle soreness, nausea."
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "version": 3,
+  "provenance": "Authored synthetic scenarios authorized by Elias Brown; not recovered histories or population estimates.",
+  "supplemental_patient_ids": [
+    501,
+    502
+  ],
+  "row_counts": {
+    "Encounter": 571,
+    "EncounterPatientChange": 0,
+    "HospitalInfection": 24,
+    "Hospitalization": 200,
+    "InfectionType": 3,
+    "Medication": 21,
+    "MedicationOrder": 302,
+    "MedicationSideEffect": 60,
+    "Patient": 502,
+    "PatientTreatment": 1276,
+    "Physician": 100,
+    "PhysicianTreatment": 520,
+    "SideEffect": 94,
+    "Treatment": 39,
+    "TreatmentSideEffect": 118
+  },
+  "physician_assignments_total": 1796,
+  "featured_cases": [
+    {
+      "patient_id": 2,
+      "patient_name": "Robert Perez",
+      "index_encounter": 1,
+      "scenario": "pci",
+      "return_encounter": 161,
+      "gap_days": 20
+    },
+    {
+      "patient_id": 4,
+      "patient_name": "Elizabeth Gonzalez",
+      "index_encounter": 2,
+      "scenario": "cabg",
+      "return_encounter": 162,
+      "gap_days": 30
+    },
+    {
+      "patient_id": 5,
+      "patient_name": "Barbara Wilson",
+      "index_encounter": 3,
+      "scenario": "joint",
+      "return_encounter": 163,
+      "gap_days": 31
+    },
+    {
+      "patient_id": 6,
+      "patient_name": "Richard Taylor",
+      "index_encounter": 4,
+      "scenario": "fracture",
+      "return_encounter": 164,
+      "gap_days": 45
+    },
+    {
+      "patient_id": 8,
+      "patient_name": "Paul Jackson",
+      "index_encounter": 5,
+      "scenario": "pacemaker",
+      "return_encounter": 165,
+      "gap_days": 60
+    },
+    {
+      "patient_id": 10,
+      "patient_name": "Paul Davis",
+      "index_encounter": 6,
+      "scenario": "gallbladder",
+      "return_encounter": 166,
+      "gap_days": 90
+    },
+    {
+      "patient_id": 11,
+      "patient_name": "James Wilson",
+      "index_encounter": 7,
+      "scenario": "appendix",
+      "return_encounter": 167,
+      "gap_days": 10
+    },
+    {
+      "patient_id": 14,
+      "patient_name": "John White",
+      "index_encounter": 8,
+      "scenario": "hernia",
+      "return_encounter": 168,
+      "gap_days": 0
+    }
+  ],
+  "preserved_catalogs": "All 31 original treatment entries and 20 original medication entries; two treatment-description typos corrected; original dose references restored.",
+  "regeneration": "Visit dates, associations, outcomes, care metrics, roles, and selected medication orders rebuilt from scenario definitions. Counts are not forced to match the original.",
+  "medication_scope": "Selected example orders, including maintenance therapy; not complete perioperative/anesthetic/antimicrobial prescribing or administration records.",
+  "infection_scope": "Named episode categories and organisms; fictional adjudication rather than computed NHSN definitions.",
+  "score_definitions": {
+    "FallsRisk": "Project-specific 1\u201310 score: higher means greater risk; not Morse or another validated instrument.",
+    "ADLScore": "Project-specific 1\u201310 score: higher means more independence; not Katz/Barthel."
+  }
+}

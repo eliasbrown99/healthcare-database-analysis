@@ -1,0 +1,2 @@
+# Optional: only needed to re-extract the original Access file.
+access-parser==0.0.6

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.laccdb
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+.DS_Store
+data/boundary_cases.sqlite
+
+# Generated browser reports
+_site/
+
+# Personal notes are local only. Publication uses an explicit file list.
+private/
+*.local.*

@@ -1,0 +1,10 @@
+PatientID,MedicationName,EffectName
+2,Aspirin,Heartburn
+2,Aspirin,Nausea
+2,Aspirin,Stomach pain
+2,Atorvastatin,Headache
+2,Atorvastatin,Muscle pain
+2,Atorvastatin,Nausea
+2,Clopidogrel,Bleeding
+2,Clopidogrel,Bruising
+2,Clopidogrel,Diarrhea

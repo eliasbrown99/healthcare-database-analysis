@@ -1,0 +1,122 @@
+[
+  {
+    "MedicationID": 1,
+    "MedicationName": "Atorvastatin",
+    "StandardDosage": "10 mg",
+    "SideEffects": "Muscle pain, Headache, Nausea"
+  },
+  {
+    "MedicationID": 2,
+    "MedicationName": "Metformin",
+    "StandardDosage": "500 mg",
+    "SideEffects": "Diarrhea, Nausea, Vomiting"
+  },
+  {
+    "MedicationID": 3,
+    "MedicationName": "Lisinopril",
+    "StandardDosage": "5 mg",
+    "SideEffects": "Cough, Dizziness, Headache"
+  },
+  {
+    "MedicationID": 4,
+    "MedicationName": "Metoprolol",
+    "StandardDosage": "25 mg",
+    "SideEffects": "Fatigue, Dizziness, Depression"
+  },
+  {
+    "MedicationID": 5,
+    "MedicationName": "Aspirin",
+    "StandardDosage": "81 mg",
+    "SideEffects": "Stomach pain, Heartburn, Nausea"
+  },
+  {
+    "MedicationID": 6,
+    "MedicationName": "Amoxicillin",
+    "StandardDosage": "250 mg",
+    "SideEffects": "Rash, Diarrhea, Nausea"
+  },
+  {
+    "MedicationID": 7,
+    "MedicationName": "Omeprazole",
+    "StandardDosage": "20 mg",
+    "SideEffects": "Headache, Abdominal pain, Nausea"
+  },
+  {
+    "MedicationID": 8,
+    "MedicationName": "Albuterol",
+    "StandardDosage": "Inhaler",
+    "SideEffects": "Shakiness, Headache, Throat irritation"
+  },
+  {
+    "MedicationID": 9,
+    "MedicationName": "Levothyroxine",
+    "StandardDosage": "25 mcg",
+    "SideEffects": "Hair loss, Appetite changes, Anxiety"
+  },
+  {
+    "MedicationID": 10,
+    "MedicationName": "Simvastatin",
+    "StandardDosage": "10 mg",
+    "SideEffects": "Muscle pain, Constipation, Nausea"
+  },
+  {
+    "MedicationID": 11,
+    "MedicationName": "Prednisone",
+    "StandardDosage": "5 mg",
+    "SideEffects": "Increased appetite, Mood changes, Insomnia"
+  },
+  {
+    "MedicationID": 12,
+    "MedicationName": "Gabapentin",
+    "StandardDosage": "100 mg",
+    "SideEffects": "Dizziness, Fatigue, Blurred vision"
+  },
+  {
+    "MedicationID": 13,
+    "MedicationName": "Warfarin",
+    "StandardDosage": "2 mg",
+    "SideEffects": "Bleeding, Bruising, Nausea"
+  },
+  {
+    "MedicationID": 14,
+    "MedicationName": "Furosemide",
+    "StandardDosage": "20 mg",
+    "SideEffects": "Dehydration, Low blood pressure, Dizziness"
+  },
+  {
+    "MedicationID": 15,
+    "MedicationName": "Hydrochlorothiazide",
+    "StandardDosage": "12.5 mg",
+    "SideEffects": "Increased urination, Dizziness, Headache"
+  },
+  {
+    "MedicationID": 16,
+    "MedicationName": "Clopidogrel",
+    "StandardDosage": "75 mg",
+    "SideEffects": "Bleeding, Bruising, Diarrhea"
+  },
+  {
+    "MedicationID": 17,
+    "MedicationName": "Losartan",
+    "StandardDosage": "25 mg",
+    "SideEffects": "Dizziness, Back pain, Cold symptoms"
+  },
+  {
+    "MedicationID": 18,
+    "MedicationName": "Sertraline",
+    "StandardDosage": "25 mg",
+    "SideEffects": "Nausea, Insomnia, Dry mouth"
+  },
+  {
+    "MedicationID": 19,
+    "MedicationName": "Montelukast",
+    "StandardDosage": "10 mg",
+    "SideEffects": "Stomach pain, Headache, Cough"
+  },
+  {
+    "MedicationID": 20,
+    "MedicationName": "Doxycycline",
+    "StandardDosage": "100 mg",
+    "SideEffects": "Sun sensitivity, Upset stomach, Diarrhea"
+  }
+]

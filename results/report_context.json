@@ -1,0 +1,7 @@
+{
+  "as_of": "2023-12-31",
+  "patient_id": 2,
+  "undated_orders_excluded": 0,
+  "dated_orders_without_prescriber_excluded_from_query_08": 0,
+  "policy": "Date-filtered reports use recorded event dates, not historical versions of the chart. Undated orders are excluded, never assigned an invented date. Query 06 uses completed-stay snapshots. Narrative fields and care-team assignments are current records."
+}

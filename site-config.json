@@ -1,0 +1,24 @@
+{
+  "title": "Healthcare Database",
+  "category": "Data design & reporting",
+  "description": "Patient-centered relational design, SQL reporting, and validation on fictional healthcare records.",
+  "repository_url": null,
+  "nav": [
+    [
+      "Overview",
+      "README.md"
+    ],
+    [
+      "Project brief",
+      "docs/PROJECT_BRIEF.md"
+    ],
+    [
+      "Worked cases",
+      "docs/SCENARIOS.md"
+    ],
+    [
+      "Methods",
+      "docs/DESIGN.md"
+    ]
+  ]
+}

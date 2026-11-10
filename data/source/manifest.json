@@ -1,0 +1,753 @@
+{
+  "source_filename": "FinalProject1(1).accdb",
+  "source_sha256": "71dcd87fa0ae2cc1d24227905b5b589382d3998243193e1b0ab46fa838ee54dc",
+  "reader": "access-parser 0.0.6",
+  "schema": {
+    "Patient": {
+      "row_count": 500,
+      "primary_key": [
+        "PatientID"
+      ],
+      "columns": [
+        {
+          "name": "PatientID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": true,
+            "Description": "Unique identifier for each patient"
+          }
+        },
+        {
+          "name": "FirstName",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Patient's first name",
+            "Required": true,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "LastName",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Patien'ts last name",
+            "Required": true,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "DateOfBirth",
+          "access_type_code": 8,
+          "storage_length_bytes": 8,
+          "text_max_characters": null,
+          "properties": {
+            "Required": true,
+            "Description": "Patient's date of birth"
+          }
+        },
+        {
+          "name": "Gender",
+          "access_type_code": 10,
+          "storage_length_bytes": 20,
+          "text_max_characters": 10,
+          "properties": {
+            "Description": "Patient's gender",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "PhoneNumber",
+          "access_type_code": 10,
+          "storage_length_bytes": 30,
+          "text_max_characters": 15,
+          "properties": {
+            "Description": "Patient's primary phone number",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "Email",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Patient's email address",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "Address",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Patient's home address",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "EmergencyContact",
+          "access_type_code": 10,
+          "storage_length_bytes": 30,
+          "text_max_characters": 15,
+          "properties": {
+            "Description": "Patient's emergency contact phone number",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        }
+      ],
+      "table_properties": {}
+    },
+    "Hospitalization": {
+      "row_count": 200,
+      "primary_key": [
+        "PatientCareID"
+      ],
+      "columns": [
+        {
+          "name": "PatientCareID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": true,
+            "Description": "Unique identifier for instance of a patient's hospitalization"
+          }
+        },
+        {
+          "name": "AdmitDate",
+          "access_type_code": 8,
+          "storage_length_bytes": 8,
+          "text_max_characters": null,
+          "properties": {
+            "Required": true,
+            "Description": "Admit date to hospital"
+          }
+        },
+        {
+          "name": "DischargeDate",
+          "access_type_code": 8,
+          "storage_length_bytes": 8,
+          "text_max_characters": null,
+          "properties": {
+            "Required": false,
+            "Description": "Discharge date from hospital"
+          }
+        },
+        {
+          "name": "HospitalAcquiredInfection",
+          "access_type_code": 1,
+          "storage_length_bytes": 1,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "No",
+            "Description": "Record of whether the patient acquired an infection while hospitalized"
+          }
+        },
+        {
+          "name": "FallsRisk",
+          "access_type_code": 2,
+          "storage_length_bytes": 1,
+          "text_max_characters": null,
+          "properties": {
+            "Description": "Score from 1-10 indicatig a patient's risk of falling",
+            "DefaultValue": "0",
+            "Required": false,
+            "ValidationRule": ">=1 And <=10",
+            "ValidationText": "FallsRisk score must be between 1 and 10"
+          }
+        },
+        {
+          "name": "ADLScore",
+          "access_type_code": 2,
+          "storage_length_bytes": 1,
+          "text_max_characters": null,
+          "properties": {
+            "Description": "Score from 1-10 indicating a patient's 'activity of daily living' score",
+            "DefaultValue": "0",
+            "Required": false,
+            "ValidationRule": ">=1 And <=10",
+            "ValidationText": "ADLScore score must be between 1 and 10"
+          }
+        },
+        {
+          "name": "Diet",
+          "access_type_code": 10,
+          "storage_length_bytes": 200,
+          "text_max_characters": 100,
+          "properties": {
+            "Description": "Patient's prescribd diet and/or dietary restrictions",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "Readmit30Days",
+          "access_type_code": 1,
+          "storage_length_bytes": 1,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "No",
+            "Description": "Indicates whether the patient was readmitted to hospital within 30 days of first stay"
+          }
+        },
+        {
+          "name": "FallsOccurred",
+          "access_type_code": 1,
+          "storage_length_bytes": 1,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "No",
+            "Description": "Record of whether a fall occured"
+          }
+        },
+        {
+          "name": "MedicationErrors",
+          "access_type_code": 6,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": false,
+            "Description": "Count of medication errors"
+          }
+        },
+        {
+          "name": "CarePlanAdherence",
+          "access_type_code": 1,
+          "storage_length_bytes": 1,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "No",
+            "Description": "Record of whether patient generally adhered to careplan"
+          }
+        },
+        {
+          "name": "ActivityLevel",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Mobility and ability to take care of one's self (e.g., 'self', 'total', Assist x1, Assist x2)",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "IsolationType",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Record of whether the patient required isolation (e.g., 'c. diff', 'neutropenic', 'flu', 'covid')",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "Infection",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Infection type",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "InfectionResolved",
+          "access_type_code": 1,
+          "storage_length_bytes": 1,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "No",
+            "Description": "Record of wheter the infection was resolved by time of discharge"
+          }
+        }
+      ],
+      "table_properties": {}
+    },
+    "Medication": {
+      "row_count": 20,
+      "primary_key": [
+        "MedicationID"
+      ],
+      "columns": [
+        {
+          "name": "MedicationID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": true,
+            "Description": "Unique identifier for each medication"
+          }
+        },
+        {
+          "name": "MedicationName",
+          "access_type_code": 10,
+          "storage_length_bytes": 200,
+          "text_max_characters": 100,
+          "properties": {
+            "Description": "Name of each medication",
+            "Required": true,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "StandardDosage",
+          "access_type_code": 10,
+          "storage_length_bytes": 30,
+          "text_max_characters": 15,
+          "properties": {
+            "Description": "Standard dose of medication",
+            "Required": true,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "SideEffects",
+          "access_type_code": 10,
+          "storage_length_bytes": 510,
+          "text_max_characters": 255,
+          "properties": {
+            "Required": false,
+            "AllowZeroLength": true,
+            "Description": "List of possible side effects for medication"
+          }
+        }
+      ],
+      "table_properties": {}
+    },
+    "Treatment": {
+      "row_count": 31,
+      "primary_key": [
+        "TreatmentID"
+      ],
+      "columns": [
+        {
+          "name": "TreatmentID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": true,
+            "Description": "Unique identifier for each treatment"
+          }
+        },
+        {
+          "name": "TreatmentName",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Name of treatment",
+            "Required": true,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "Description",
+          "access_type_code": 10,
+          "storage_length_bytes": 510,
+          "text_max_characters": 255,
+          "properties": {
+            "Required": true,
+            "AllowZeroLength": true,
+            "Description": "Description of treatment"
+          }
+        },
+        {
+          "name": "SideEffects",
+          "access_type_code": 10,
+          "storage_length_bytes": 510,
+          "text_max_characters": 255,
+          "properties": {
+            "Required": false,
+            "AllowZeroLength": true,
+            "Description": "Possible side effects of treatment"
+          }
+        }
+      ],
+      "table_properties": {}
+    },
+    "PatientTreatment": {
+      "row_count": 1000,
+      "primary_key": [
+        "PatientTreatmentID"
+      ],
+      "columns": [
+        {
+          "name": "PatientTreatmentID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": true,
+            "Description": "Unique identifier for treatment administered to patient"
+          }
+        },
+        {
+          "name": "PatientID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": true,
+            "Description": "References Patient table"
+          }
+        },
+        {
+          "name": "PatientCareID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": false,
+            "Description": "References Hospitalization table"
+          }
+        },
+        {
+          "name": "TreatmentID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": false,
+            "Description": "References Treatment table"
+          }
+        },
+        {
+          "name": "StartDate",
+          "access_type_code": 8,
+          "storage_length_bytes": 8,
+          "text_max_characters": null,
+          "properties": {
+            "Description": "Date treatment began",
+            "Required": true
+          }
+        },
+        {
+          "name": "EndDate",
+          "access_type_code": 8,
+          "storage_length_bytes": 8,
+          "text_max_characters": null,
+          "properties": {
+            "Description": "Date treatment ended",
+            "Required": false
+          }
+        },
+        {
+          "name": "Outcome",
+          "access_type_code": 10,
+          "storage_length_bytes": 200,
+          "text_max_characters": 100,
+          "properties": {
+            "Description": "Brief description describing results of treatment",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "InPatient",
+          "access_type_code": 1,
+          "storage_length_bytes": 1,
+          "text_max_characters": null,
+          "properties": {
+            "Description": "Record of whether patient was hospitalized",
+            "DefaultValue": "No"
+          }
+        },
+        {
+          "name": "Compliance",
+          "access_type_code": 10,
+          "storage_length_bytes": 200,
+          "text_max_characters": 100,
+          "properties": {
+            "Description": "Description of how well patient followed treatment",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "FrequencyTreatment",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Frequency at which treatment was administered",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        }
+      ],
+      "table_properties": {}
+    },
+    "PatientTreatmentMedication": {
+      "row_count": 3000,
+      "primary_key": [
+        "PatientTreatmentMedicationID"
+      ],
+      "columns": [
+        {
+          "name": "PatientTreatmentMedicationID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": true,
+            "Description": "Unique identifier for medication administered under a single treatment plan for single patient"
+          }
+        },
+        {
+          "name": "PatientTreatmentID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": true,
+            "Description": "References PatientTreatment table"
+          }
+        },
+        {
+          "name": "MedicationID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": true,
+            "Description": "References Medication table"
+          }
+        },
+        {
+          "name": "Dosage",
+          "access_type_code": 10,
+          "storage_length_bytes": 510,
+          "text_max_characters": 255,
+          "properties": {
+            "Required": true,
+            "AllowZeroLength": true,
+            "Description": "Prescribed medication dose for given treatment plan"
+          }
+        },
+        {
+          "name": "Frequency",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Frequency at which medication was administered under treatment plan",
+            "Required": false,
+            "AllowZeroLength": true
+          }
+        }
+      ],
+      "table_properties": {}
+    },
+    "Physician": {
+      "row_count": 100,
+      "primary_key": [
+        "PhysicianID"
+      ],
+      "columns": [
+        {
+          "name": "PhysicianID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": true,
+            "Description": "Unique identifier for each physician"
+          }
+        },
+        {
+          "name": "FirstName",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Physician's first name",
+            "Required": true,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "LastName",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Physician's last name",
+            "Required": true,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "Specialty",
+          "access_type_code": 10,
+          "storage_length_bytes": 100,
+          "text_max_characters": 50,
+          "properties": {
+            "Description": "Physician's specialty",
+            "Required": true,
+            "AllowZeroLength": true
+          }
+        },
+        {
+          "name": "Email",
+          "access_type_code": 10,
+          "storage_length_bytes": 510,
+          "text_max_characters": 255,
+          "properties": {
+            "Required": false,
+            "AllowZeroLength": true,
+            "Description": "Physician's email"
+          }
+        }
+      ],
+      "table_properties": {}
+    },
+    "PhysicianTreatment": {
+      "row_count": 2000,
+      "primary_key": [
+        "PhysicianID",
+        "PatientTreatmentID"
+      ],
+      "columns": [
+        {
+          "name": "PhysicianID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": true,
+            "Description": "Unique identifier for each physician"
+          }
+        },
+        {
+          "name": "PatientTreatmentID",
+          "access_type_code": 4,
+          "storage_length_bytes": 4,
+          "text_max_characters": null,
+          "properties": {
+            "DefaultValue": "0",
+            "Required": true,
+            "Description": "Unique identifier for treatment administered to patient"
+          }
+        },
+        {
+          "name": "Role",
+          "access_type_code": 10,
+          "storage_length_bytes": 510,
+          "text_max_characters": 255,
+          "properties": {
+            "Required": false,
+            "AllowZeroLength": true,
+            "Description": "Physician's role for treatment plan administered to patient"
+          }
+        }
+      ],
+      "table_properties": {}
+    }
+  },
+  "relationships": [
+    {
+      "ccolumn": 1,
+      "grbit": 0,
+      "icolumn": 0,
+      "szRelationship": "MedicationPatientTreatmentMedication",
+      "szObject": "PatientTreatmentMedication",
+      "szColumn": "MedicationID",
+      "szReferencedObject": "Medication",
+      "szReferencedColumn": "MedicationID"
+    },
+    {
+      "ccolumn": 1,
+      "grbit": 0,
+      "icolumn": 0,
+      "szRelationship": "PatientCarePatientTreatment",
+      "szObject": "PatientTreatment",
+      "szColumn": "PatientCareID",
+      "szReferencedObject": "Hospitalization",
+      "szReferencedColumn": "PatientCareID"
+    },
+    {
+      "ccolumn": 1,
+      "grbit": 0,
+      "icolumn": 0,
+      "szRelationship": "PatientPatientTreatment",
+      "szObject": "PatientTreatment",
+      "szColumn": "PatientID",
+      "szReferencedObject": "Patient",
+      "szReferencedColumn": "PatientID"
+    },
+    {
+      "ccolumn": 1,
+      "grbit": 0,
+      "icolumn": 0,
+      "szRelationship": "PatientTreatmentPatientTreatmentMedication",
+      "szObject": "PatientTreatmentMedication",
+      "szColumn": "PatientTreatmentID",
+      "szReferencedObject": "PatientTreatment",
+      "szReferencedColumn": "PatientTreatmentID"
+    },
+    {
+      "ccolumn": 1,
+      "grbit": 0,
+      "icolumn": 0,
+      "szRelationship": "PatientTreatmentPhysicianTreatment",
+      "szObject": "PhysicianTreatment",
+      "szColumn": "PatientTreatmentID",
+      "szReferencedObject": "PatientTreatment",
+      "szReferencedColumn": "PatientTreatmentID"
+    },
+    {
+      "ccolumn": 1,
+      "grbit": 0,
+      "icolumn": 0,
+      "szRelationship": "PhysicianPhysicianTreatment",
+      "szObject": "PhysicianTreatment",
+      "szColumn": "PhysicianID",
+      "szReferencedObject": "Physician",
+      "szReferencedColumn": "PhysicianID"
+    },
+    {
+      "ccolumn": 1,
+      "grbit": 0,
+      "icolumn": 0,
+      "szRelationship": "TreatmentPatientTreatment",
+      "szObject": "PatientTreatment",
+      "szColumn": "TreatmentID",
+      "szReferencedObject": "Treatment",
+      "szReferencedColumn": "TreatmentID"
+    }
+  ],
+  "saved_queries": [],
+  "forms": [],
+  "reports": []
+}

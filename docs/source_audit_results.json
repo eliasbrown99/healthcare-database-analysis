@@ -1,0 +1,181 @@
+{
+  "row_counts": {
+    "Patient": 500,
+    "Hospitalization": 200,
+    "Medication": 20,
+    "Treatment": 31,
+    "PatientTreatment": 1000,
+    "PatientTreatmentMedication": 3000,
+    "Physician": 100,
+    "PhysicianTreatment": 2000
+  },
+  "stays_linked_to_multiple_patients": 159,
+  "stays_without_any_treatment_link": 7,
+  "treatments_without_physicians": 144,
+  "blank_dosages": 3000,
+  "linked_treatments": 631,
+  "linked_treatments_outside_stay": 555,
+  "inpatient_flag_disagreements": 0,
+  "average_length_of_stay_days": 58.635,
+  "hai_stays_with_known_type": 24,
+  "stored_readmission_flags": 8,
+  "high_falls_risk_stays": 84,
+  "invalid_hospital_dates": 0,
+  "invalid_treatment_dates": 0,
+  "emergency_contacts_equal_truncated_placeholder": 500,
+  "foreign_key_orphans": {
+    "MedicationPatientTreatmentMedication": 0,
+    "PatientCarePatientTreatment": 0,
+    "PatientPatientTreatment": 0,
+    "PatientTreatmentPatientTreatmentMedication": 0,
+    "PatientTreatmentPhysicianTreatment": 0,
+    "PhysicianPhysicianTreatment": 0,
+    "TreatmentPatientTreatment": 0
+  },
+  "duplicate_primary_keys": {
+    "Patient": 0,
+    "Hospitalization": 0,
+    "Medication": 0,
+    "Treatment": 0,
+    "PatientTreatment": 0,
+    "PatientTreatmentMedication": 0,
+    "Physician": 0,
+    "PhysicianTreatment": 0
+  },
+  "stay_162_patients": [
+    213,
+    346,
+    460
+  ],
+  "patient_212_medications": [
+    "Albuterol",
+    "Amoxicillin",
+    "Atorvastatin",
+    "Furosemide",
+    "Levothyroxine",
+    "Metoprolol",
+    "Montelukast",
+    "Omeprazole",
+    "Sertraline",
+    "Simvastatin"
+  ],
+  "hai_distribution": [
+    {
+      "Infection": "CLABSI",
+      "count": 4
+    },
+    {
+      "Infection": "Klebsiella pneumoniae",
+      "count": 6
+    },
+    {
+      "Infection": "Legionnaires' Disease",
+      "count": 3
+    },
+    {
+      "Infection": "MRSA",
+      "count": 3
+    },
+    {
+      "Infection": "Multidrug-Resistant Acinetobacter",
+      "count": 4
+    },
+    {
+      "Infection": "Sepsis",
+      "count": 2
+    },
+    {
+      "Infection": "VAP",
+      "count": 1
+    },
+    {
+      "Infection": "VRE",
+      "count": 1
+    }
+  ],
+  "medication_counts": [
+    {
+      "MedicationName": "Warfarin",
+      "count": 168
+    },
+    {
+      "MedicationName": "Furosemide",
+      "count": 164
+    },
+    {
+      "MedicationName": "Albuterol",
+      "count": 160
+    },
+    {
+      "MedicationName": "Sertraline",
+      "count": 159
+    },
+    {
+      "MedicationName": "Hydrochlorothiazide",
+      "count": 156
+    },
+    {
+      "MedicationName": "Montelukast",
+      "count": 155
+    },
+    {
+      "MedicationName": "Simvastatin",
+      "count": 155
+    },
+    {
+      "MedicationName": "Aspirin",
+      "count": 154
+    },
+    {
+      "MedicationName": "Prednisone",
+      "count": 153
+    },
+    {
+      "MedicationName": "Metoprolol",
+      "count": 149
+    },
+    {
+      "MedicationName": "Clopidogrel",
+      "count": 148
+    },
+    {
+      "MedicationName": "Omeprazole",
+      "count": 148
+    },
+    {
+      "MedicationName": "Levothyroxine",
+      "count": 147
+    },
+    {
+      "MedicationName": "Losartan",
+      "count": 146
+    },
+    {
+      "MedicationName": "Atorvastatin",
+      "count": 144
+    },
+    {
+      "MedicationName": "Doxycycline",
+      "count": 142
+    },
+    {
+      "MedicationName": "Metformin",
+      "count": 141
+    },
+    {
+      "MedicationName": "Gabapentin",
+      "count": 140
+    },
+    {
+      "MedicationName": "Lisinopril",
+      "count": 140
+    },
+    {
+      "MedicationName": "Amoxicillin",
+      "count": 131
+    }
+  ],
+  "saved_queries": [],
+  "forms": [],
+  "reports": []
+}
