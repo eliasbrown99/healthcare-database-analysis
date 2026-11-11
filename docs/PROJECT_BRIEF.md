@@ -28,7 +28,7 @@ These checks establish specific behavior. They do not establish completeness for
 
 ## Original work and later extensions
 
-Elias designed the original healthcare database. The original coursework included Brandon Weis, whose primary documented contribution was query work; Elias's primary documented implementation contribution was synthetic data generation. The later audit, Python/SQLite rebuild, scenarios, and checks are AI-assisted extensions of that work.
+Elias designed the original healthcare database. The original coursework included a classmate, whose primary documented contribution was query work; Elias's primary documented implementation contribution was synthetic data generation. The later audit, Python/SQLite rebuild, scenarios, and checks are AI-assisted extensions of that work.
 
 The revised scenarios are newly authored fictional events, not recovered histories from the original inconsistent relationships. Original source records remain separately preserved. The project supports review of database design and SQL behavior, not a claim about patient outcomes.
 

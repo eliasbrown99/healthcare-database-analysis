@@ -112,6 +112,6 @@ This reads tables and metadata; it does not write Access files or convert forms,
 
 ## Attribution
 
-Original database design: **Elias Brown**. Original INSC 384 coursework: **Elias Brown and Brandon Weis**. The final report credits Elias primarily with synthetic data generation and Brandon primarily with queries, with both contributing to both. It discloses ChatGPT assistance with VBA generation. Queries, forms, and reports were completed individually and their evidence compiled into the Word report; their absence as saved objects in this copy of the database is not evidence of omitted work.
+Original database design: **Elias Brown**. Original INSC 384 coursework: **Elias Brown and a classmate**. The final report credits Elias primarily with synthetic data generation and the classmate primarily with queries, with both contributing to both. It discloses ChatGPT assistance with VBA generation. Queries, forms, and reports were completed individually and their evidence compiled into the Word report; their absence as saved objects in this copy of the database is not evidence of omitted work.
 
 The November 2026 audit, Python/SQLite refactor, worked scenarios, tests, and documentation were developed with AI assistance for Elias's portfolio. Version 2 introduced explicit cases. Version 3 addresses independent review with pediatric examples, stronger integrity rules, reporting boundaries, and checks for stale artifacts. These authored events are new fictional scenarios, not recovered clinical histories.

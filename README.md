@@ -12,7 +12,7 @@ The audit found that 159 of 200 original stays were linked through treatments to
 
 ## My contribution
 
-I designed the original healthcare database. The coursework was completed with Brandon Weis; the original report credits me primarily with synthetic data generation and Brandon primarily with queries, with contributions from both to both. It also discloses AI assistance with VBA data generation.
+I designed the original healthcare database. The coursework was completed with a classmate; the original report credits me primarily with synthetic data generation and my classmate primarily with queries, with contributions from both to both. It also discloses AI assistance with VBA data generation.
 
 The November 2026 audit, SQLite rebuild, additional scenarios, checks, and presentation are later AI-assisted extensions. [Full project history](PROJECT_GUIDE.md#attribution).
 
@@ -46,7 +46,3 @@ The current scenario database has **502 patients (500 original plus 2 supplement
 <!-- END GENERATED COUNTS -->
 
 </details>
-
-## Related projects
-
-[Knoxville General Fund](https://eliasbrown99.github.io/knoxville-budget-analysis/) · [Applied Statistics in R](https://eliasbrown99.github.io/applied-statistics-in-r/)
