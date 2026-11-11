@@ -105,6 +105,17 @@ def main():
 <body><a class="skip" href="#main">Skip to content</a>
 <header class="masthead"><a class="identity" href="https://eliasbrown.io/">ELIAS BROWN <span>Selected analytical work</span></a><div class="masthead-links"><span class="discipline">{escape(config['category'])}</span><a class="home-link" href="https://eliasbrown.io/">← Back to eliasbrown.io</a></div></header>
 <div class="projectbar"><a class="projectname" href="{href(out / 'index.html', current)}">{escape(config['title'])}</a><nav class="site-nav" aria-label="Project">{''.join(nav)}{repo_link}</nav></div>
+<script>
+(() => {{
+  const bar = document.querySelector('.projectbar');
+  const updateHeaderHeight = () => document.documentElement.style.setProperty(
+    '--projectbar-height', bar.getBoundingClientRect().height + 'px'
+  );
+  updateHeaderHeight();
+  if ('ResizeObserver' in window) new ResizeObserver(updateHeaderHeight).observe(bar);
+  else window.addEventListener('resize', updateHeaderHeight);
+}})();
+</script>
 <div class="layout"><aside class="contents"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="Sections">{section_links or '<a href="#main">Read the page</a>'}</nav></aside>
 <main id="main"><article>{body}</article><footer><strong>Elias Brown</strong><p>{footer}</p><a href="https://eliasbrown.io/">Personal website</a> · <a href="{href(out / 'index.html', current)}">Project overview</a> · <a href="#main">Back to top ↑</a></footer></main></div></body></html>'''
 

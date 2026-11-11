@@ -12,3 +12,18 @@ img{background:#fff}.skip{background:#f7f2e8}.masthead a:focus-visible,.projectb
 @media(max-width:650px){.masthead{padding:20px 22px;gap:15px}.projectbar{padding:17px 22px}.masthead .home-link{font-size:11px}.identity{letter-spacing:.1em}.identity span{font-size:11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{body{background:white;color:black}.masthead,.projectbar{display:none}}
+
+/* Keep project navigation available and offset section targets by its actual height. */
+:root{--projectbar-height:4.5rem}
+html{scroll-padding-top:calc(var(--projectbar-height) + 1.5rem)}
+.projectbar{position:sticky;top:0;z-index:20}
+.skip{z-index:30}
+@media(min-width:651px){
+  .contents{
+    top:calc(var(--projectbar-height) + 30px);
+    max-height:calc(100vh - var(--projectbar-height) - 60px);
+    max-height:calc(100dvh - var(--projectbar-height) - 60px);
+  }
+}
+@media(max-width:900px){:root{--projectbar-height:10rem}}
+@media print{html{scroll-padding-top:0}}
